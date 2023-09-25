@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <style>
+        body{
+            border:2px solid black;
+            padding:20px;
+            margin:100px 500px 100px 500px;
+        }
+        label{
+            display: inline-block;
+            width:100px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+        <label>1st Number:</label><input type="text" id="one"><br>
+        <label>2nd Number:</label><input type="text" id="two"><br>
+        <button onclick="Multiply()">Multiply</button> <button onclick="divide()">Divide</button>
+
+    <p>The Result Is:</p>
+    <p id="answer"></p>
+    
+    <script>
+        
+        function Multiply(){
+            var x = document.getElementById("one").value;
+            var y = document.getElementById("two").value;
+            var r = document.getElementById("answer");
+            r.innerHTML = x*y;
+        }
+
+        function divide(){
+            var x = document.getElementById("one").value;
+            var y = document.getElementById("two").value;
+            var r = document.getElementById("answer");
+
+            r.innerHTML = x/y;
+        }
+
+    </script>
+</body>
+</html>
